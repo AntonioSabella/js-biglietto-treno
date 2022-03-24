@@ -49,16 +49,16 @@ if (passenger_age < 18) {
     console.log(discount_under);
     alert("Hai diritto allo sconto giovane Skywalker")
     console.log(trip_cost - discount_under)
-    info = `Prezzo del biglietto con sconto del 20%: ${price_under.toPrecision(3)}`
+    info = `Prezzo del biglietto con sconto del 20%: ${price_under.toPrecision(3)} €`
 } else if (passenger_age > 65) {
     console.log(discount_above);
     alert("Hai diritto allo sconto saggio Yoda")
     console.log(trip_cost - discount_above)
-    info = `Prezzo del biglietto con sconto del 40%: ${price_above.toPrecision(3)}`
+    info = `Prezzo del biglietto con sconto del 40%: ${price_above.toPrecision(3)} €`
 } else {
     console.log(trip_cost);
     alert("Per te vale il prezzo pieno Stormtrooper!")
-    info = `Prezzo del biglietto a prezzo pieno: ${trip_cost.toPrecision(3)}`
+    info = `Prezzo del biglietto a prezzo pieno: ${trip_cost.toPrecision(3)} €`
 }
 
 //Stampare risultato a schermo 
